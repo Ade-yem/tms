@@ -2,7 +2,7 @@
 echo "Running composer"
 composer global require hirak/prestissimo
 chown -R www-data:www-data /var/www/html/storage
-chmod 775 /var/www/html/storage/logs/laravel.log
+chmod 775 /var/www/html/storage
 
 composer install --no-dev --working-dir=/var/www/html
 
